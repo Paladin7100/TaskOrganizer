@@ -1,0 +1,3 @@
+Parameter1;Parameter2;Parameter3;Parameter4;Parameter5;
+Monthly1;LastDay;ValueP3;ValueP4;ValueP5;
+Monthly2;LastDay;ValueP3;ValueP4;ValueP5;

@@ -1,0 +1,25 @@
+# TaskOrganizer
+## Datafile Structure
+
+All files are comma separated files, separator used is ";"
+
+| Task Organizer config Files | Description |
+| ----------- | ----------- |
+| TaskOrganizerScriptOrder.txt | This file sets the order in when each batch of scripts will be run. Add one line for each script to be run |
+| TaskOrganizerDailyTasks.txt | Lists and sets the order for scripts which will run each day |
+| TaskOrganizerDay_daynumber.txt | Lists and sets the order for scripts which will run on a specific day of the mont. E.g. TaskOrganizerDay_15.txt |
+| TaskOrganizerMonthlyFirstDayTasks.txt | Lists and sets the order for scripts which will run first day of each month |
+| TaskOrganizerMonthlyLastDayTasks.txt | Lists and sets the order for scripts which will run last day of each month |
+| TaskOrganizerMonthlyLastDayTasks.txt | Lists and sets the order for scripts which will run last day of each month |
+| TaskOrganizerMonthlyLastSaturdayTasks.txt | Example of a script where user can add extra controls on when to run. This one runs scripts last saturday of each month. |
+
+---
+<br/><br/>
+
+| Script config Files | Description |
+| ----------- | ----------- |
+|TaskOrganizerDailyTasks.NameOfScriptIncludingExtension.Parameters.txt | Parameter descriptions for Scripts that will be ran by **TaskOrganizerDailyTasks**. Each parameter needed for the script to run, one column for each. E.g. **TaskOrganizerDailyTasks.TestScriptDaily.ps1.Parameters.txt** |
+|TaskOrganizerDay_daynumber.NameOfScriptIncludingExtension.Parameters.txt | Parameter descriptions for Scripts that will be ran by **TaskOrganizerDay**. Each parameter needed for the script to run, one column for each. E.g. **TaskOrganizerDay_17.TestScriptDay.ps1.Parameters.txt** |
+
+---
+<br/><br/>
