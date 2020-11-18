@@ -1,0 +1,27 @@
+11-18-2020 22:18:52     Info        *********************************************************************
+11-18-2020 22:18:52     Info        ***                      Started processing                       ***
+11-18-2020 22:18:52     Info        ***                      Script Version:  1.00                    ***
+11-18-2020 22:18:52     Info        *********************************************************************
+
+11-18-2020 22:18:52     Info        *********************************************************************
+
+11-18-2020 22:18:52     Info        Collected Dates from Get-StartEndOfMonth
+11-18-2020 22:18:52     Info        11/18/2020 22:18:52
+11-18-2020 22:18:52     Info        11/01/2020 00:00:00
+11-18-2020 22:18:52     Info        11/30/2020 23:59:59
+11-18-2020 22:18:52     Info        Running Function TaskOrganizerDailyTasks
+11-18-2020 22:18:52     Info        Getting Tasks TaskOrganizerDailyTasks
+11-18-2020 22:18:52     Info        Running Task TestScriptDaily.ps1
+11-18-2020 22:18:52     Info        Running Function TaskOrganizerMonthlyFirstDayTasks
+11-18-2020 22:18:52     Info        No tasks to run in TaskOrganizerMonthlyFirstDayTasks
+11-18-2020 22:18:52     Info        Running Function TaskOrganizerMonthlyLastDayTasks
+11-18-2020 22:18:52     Info        No tasks to run in TaskOrganizerMonthlyLastDayTasks
+11-18-2020 22:18:52     Info        Running Function TaskOrganizerDay_18
+11-18-2020 22:18:52     Info        Getting Tasks TaskOrganizerDay_18
+11-18-2020 22:18:52     Info        Running Task TestScriptDay.ps1
+11-18-2020 22:18:58     Info        Running Function TaskOrganizerMonthlyLastSaturdayTasks
+11-18-2020 22:18:58     Info        No tasks to run in TaskOrganizerMonthlyLastSaturdayTasks
+
+11-18-2020 22:18:58     Info        *********************************************************************
+11-18-2020 22:18:58     Info        Finished processing.
+11-18-2020 22:18:58     Info        *********************************************************************
