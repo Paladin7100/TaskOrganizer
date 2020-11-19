@@ -29,34 +29,34 @@
 <table>
 <thead>
 <tr>
-<th>Task Organizer config Files</th>
+<th>Task Organizer Functions</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>TaskOrganizerScriptOrder.txt</td>
-<td>This file sets the order in when each batch of scripts will be run. Add one line for Scheduler function to be run</td>
+<td>Submit-TaskOrganizerTasks</td>
+<td>This function collects the order in when each batch of scripts will be run from config file i data folder.</td>
 </tr>
 <tr>
-<td>TaskOrganizerDailyTasks.txt</td>
-<td>Scheduler function: Configuration file for the function <strong>Find-TaskOrganizerDailyTasks.psm1</strong>.</td>
+<td>Find-TaskOrganizerDailyTasks</td>
+<td>Scheduler function: Lists and sets the order for scripts which will run each day</td>
 </tr>
 <tr>
-<td>TaskOrganizerDay_daynumber.txt</td>
-<td>Scheduler function: Configuration file for the function <strong>Find-TaskOrganizerDayTasks.psm1</strong>.</td>
+<td>Find-TaskOrganizerDayTasks</td>
+<td>Scheduler function: Lists and sets the order for scripts which will run on a specific day of the mont. E.g. for datafile TaskOrganizerDay_15.txt which will run on the 15th each month, 'TaskOrganizerDay_15' have to be added to the TaskOrganizerDailyTasks.txt file</td>
 </tr>
 <tr>
-<td>TaskOrganizerMonthlyFirstDayTasks.txt</td>
-<td>Scheduler function: Configuration file for the function <strong>Find-TaskOrganizerMonthlyFirstDayTasks.psm1</strong>.</td>
+<td>Find-TaskOrganizerMonthlyFirstDayTasks</td>
+<td>Scheduler function: Lists and sets the order for scripts which will run first day of each month</td>
 </tr>
 <tr>
-<td>TaskOrganizerMonthlyLastDayTasks.txt</td>
-<td>Scheduler function: Configuration file for the function <strong>Find-TaskOrganizerMonthlyLastDayTasks.psm1</strong>.</td>
+<td>Find-TaskOrganizerMonthlyLastDayTasks</td>
+<td>Scheduler function: Lists and sets the order for scripts which will run last day of each month</td>
 </tr>
 <tr>
 <td>TaskOrganizerMonthlyLastSaturdayTasks.txt</td>
-<td>Scheduler function: Configuration file for the function <strong>Find-TaskOrganizerMonthlyLastSaturdayTasks.psm1</strong>.</td>
+<td>Scheduler function: Example of a script where user can add extra controls on when to run. This one runs scripts last saturday of each month. Function Find-</td>
 </tr>
 </tbody>
 </table>
