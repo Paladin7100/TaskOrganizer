@@ -15,15 +15,22 @@ function Start-TaskOrganizerTaskTrigger {
         $TaskOrganizerTaskParametersFile = $DataPath + $TaskOrganizerTasksName + "." + $Task.ReportFile + ".Parameters.txt"
         If ((Test-Path -Path $TaskOrganizerTaskParametersFile) -eq $true) {
             $TaskOrganizerTaskParameters = Import-Csv -Path $TaskOrganizerTaskParametersFile -Delimiter ";"
-            ForEach ($TaskOrganizerTaskParameter in $TaskOrganizerTaskParameters) {
-                $TaskOrganizerTaskParametersHeaders = $TaskOrganizerTaskParameters | Get-member -MemberType 'NoteProperty' | Select-Object -ExpandProperty 'Name'
-                $ScriptCommand = ""
-                $ScriptCommandParameters = @{}
-                ForEach ($TaskOrganizerTaskParametersHeader in $TaskOrganizerTaskParametersHeaders) {
-                    $ScriptCommandParameters.Add($TaskOrganizerTaskParametersHeader,$TaskOrganizerTaskParameter.($TaskOrganizerTaskParametersHeader))
+            If ($TaskOrganizerTaskParameters){
+                ForEach ($TaskOrganizerTaskParameter in $TaskOrganizerTaskParameters) {
+                    $TaskOrganizerTaskParametersHeaders = $TaskOrganizerTaskParameters | Get-member -MemberType 'NoteProperty' | Select-Object -ExpandProperty 'Name'
+                    $ScriptCommand = ""
+                    $ScriptCommandParameters = @{}
+                    ForEach ($TaskOrganizerTaskParametersHeader in $TaskOrganizerTaskParametersHeaders) {
+                        $ScriptCommandParameters.Add($TaskOrganizerTaskParametersHeader,$TaskOrganizerTaskParameter.($TaskOrganizerTaskParametersHeader))
+                    }
+                $ScriptCommand = $TaskScriptsPath + $Task.ReportFile
+                Write-Host "$ScriptCommand"
+                &$ScriptCommand @ScriptCommandParameters
                 }
-            $ScriptCommand = $TaskScriptsPath + $Task.ReportFile
-            &$ScriptCommand @ScriptCommandParameters
+            } else {
+                $ScriptCommand = $TaskScriptsPath + $Task.ReportFile
+                Write-Host "$ScriptCommand"
+                &$ScriptCommand
             }
         } else {
             $LogMessage = "Missing file: $TaskOrganizerTaskParametersFile"

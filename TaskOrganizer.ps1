@@ -35,7 +35,7 @@
 	Revision History:
 	Name:           Date:		Version:	Description:
 	---------------------------------------------------------------------------------------
-	Frank Honore	11-18-2020	1.00		Release
+	Frank Honore	11-18-2020	1.0.0		Release
 
 
 #>
@@ -53,7 +53,7 @@ $Global:ModulesPath           = $Scriptpath + "\modules\"
 $Global:DataPath              = $Scriptpath + "\data\"
 $Global:TaskScriptsPath       = $Scriptpath + "\Scripts\"
 $TaskOrganizerScriptOrderPath = $DataPath + "TaskOrganizerScriptOrder.txt"
-$Global:sScriptVersion        = "1.00"
+$Global:sScriptVersion        = "1.0.0"
 $Global:sLogPath              = $Scriptpath + "\log\"
 $Global:sLogName              = (Get-Date).tostring("MM-dd-yyyy_HHmmss") + "_TaskOrganizer.log"
 
