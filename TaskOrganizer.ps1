@@ -1,3 +1,34 @@
+<#PSScriptInfo
+
+.VERSION 1.0.0
+
+.GUID 18f6b166-38e4-4e41-883a-adc84a26db89
+
+.AUTHOR Frank Honore
+
+.COMPANYNAME N/A
+
+.COPYRIGHT Frank Honore
+
+.TAGS Task Tasks Scheduler
+
+.LICENSEURI https://github.com/Paladin7100/TaskOrganizer/blob/main/LICENSE
+
+.PROJECTURI https://github.com/Paladin7100/TaskOrganizer
+
+.ICONURI 
+
+.EXTERNALMODULEDEPENDENCIES 
+
+.REQUIREDSCRIPTS TaskOrganizer.ps1
+
+.EXTERNALSCRIPTDEPENDENCIES 
+
+.RELEASENOTES
+
+
+#>
+
 <#
 	.SYNOPSIS
 	Script to organize script running.
@@ -28,7 +59,7 @@
 	.NOTES
 	Author:				Frank Honore
 	Create Date:		18. November 2020
-	Version:			1.00
+	Version:			1.0.0
 	
 	Notes:
 	
